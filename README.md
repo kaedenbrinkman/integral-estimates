@@ -10,3 +10,5 @@ Web app to approximate integrals using different methods of approximation:
 - Simpson's Rule
 
 Uses the Desmos API for calculation and visualization.
+
+<img src="img/img.png" style="box-shadow: 4px">
