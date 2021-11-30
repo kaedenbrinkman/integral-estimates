@@ -128,14 +128,14 @@ function updateGraph(observe = false) {
     calculator.setExpression({
       id: "bound_max",
       latex:
-        "\\max\\left(f\\left(a\\right),\\ f\\left(b\\right),\\ f\\left(\\frac{\\left(b+a\\right)}{2}\\right)\\right)",
+        "\\max\\left(f\\left(a\\right),\\ f\\left(b\\right),\\ g\\left(a\\right),\\ g\\left(b\\right),\\ f\\left(\\frac{\\left(b-a\\right)}{2}\\right),\\ \\ g\\left(\\frac{\\left(b-a\\right)}{2}\\right)\\right)",
       secret: true,
       hidden: true,
     });
     calculator.setExpression({
       id: "bound_min",
       latex:
-        "\\min\\left(f\\left(a\\right),\\ f\\left(b\\right),\\ f\\left(\\frac{\\left(b+a\\right)}{2}\\right)\\right)",
+        "\\min\\left(f\\left(a\\right),\\ f\\left(b\\right),\\ g\\left(a\\right),\\ g\\left(b\\right),\\ f\\left(\\frac{\\left(b-a\\right)}{2}\\right),\\ \\ g\\left(\\frac{\\left(b-a\\right)}{2}\\right)\\right)",
       secret: true,
       hidden: true,
     });
@@ -223,7 +223,7 @@ var answerMathField = MQ.MathField(answerSpan, {
   handlers: {
     edit: function () {
       var enteredMath = answerMathField.latex(); // Get entered math in LaTeX format
-      function_latex = enteredMath;
+      function1_latex = enteredMath;
       updateGraph();
     },
   },
@@ -236,7 +236,7 @@ var answerMathField = MQ.MathField(answerSpan, {
   handlers: {
     edit: function () {
       var enteredMath = answerMathField.latex(); // Get entered math in LaTeX format
-      function_latex = enteredMath;
+      function2_latex = enteredMath;
       updateGraph();
     },
   },

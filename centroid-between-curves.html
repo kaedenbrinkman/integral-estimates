@@ -22,6 +22,9 @@
     <div class="row" style="overflow: hidden">
       <div class="col-md-4 col-sm-12" style="max-height: 100vh; overflow: auto">
         <div class="container">
+          <div class="alert alert-warning mt-3">
+            <p>This page was just created, and is still a little buggy.</p>
+          </div>
           <p id="error"></p>
           <p>
             Define the first function <span id="fn1">f(x)=</span
@@ -29,7 +32,7 @@
           </p>
 
           <p>
-            Define the second function <span id="fn1">g(x)=</span
+            Define the second function <span id="fn2">g(x)=</span
             ><span id="answer2">0</span>
           </p>
 
@@ -42,21 +45,14 @@
             Ending bound <span id="b_prompt">b=</span><span id="end">1</span>
           </p>
 
-          <p>
-            Density <span id="p_prompt">p=</span
-            ><span id="num">1</span>
-          </p>
+          <p>Density <span id="p_prompt">p=</span><span id="num">1</span></p>
           <hr />
           <p>
             <span id="area_error" style="color: red"></span>
           </p>
           <div id="results">
-            <p>
-              Moment around x-axis: <span id="moment_x"></span>
-            </p>
-            <p>
-              Moment around y-axis: <span id="moment_y"></span>
-            </p>
+            <p>Moment around x-axis: <span id="moment_x"></span></p>
+            <p>Moment around y-axis: <span id="moment_y"></span></p>
             <p>x-value of centroid: <span id="centroid_x"></span></p>
             <p>y-value of centroid: <span id="centroid_y"></span></p>
             <p>Centroid: <span id="centroid"></span></p>
